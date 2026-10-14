@@ -4,6 +4,14 @@ Coin Vault is a small virtual-currency store. People buy Gold Coins with mocked 
 
 The full schema, endpoints, and status codes are in [docs/design-doc.md](docs/design-doc.md).
 
+
+
+
+https://github.com/user-attachments/assets/0f9884cb-8c23-4eba-9f7d-0a0ab3599d5f
+
+
+
+
 ## Problem
 
 A game store needs one currency, Gold Coins, for its catalog. Real-money checkout can be faked for this exercise. The store still has to keep a correct balance: every coin added or spent is recorded, a purchase either finishes completely or does not happen, and a confirmed top-up credits coins only once. One-time items can be owned only once. The balance cannot go negative.
