@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.test
+.pgdata/
+.localstorage
+backend/.localstorage
+frontend/dist/
+frontend/.next/

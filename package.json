@@ -1,0 +1,21 @@
+{
+  "name": "coin-vault",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "API_URL=http://127.0.0.1:3001 npm run build -w frontend && concurrently -k -n api,web \"PORT=3001 npm run start -w backend\" \"npm run start -w frontend\"",
+    "test": "npm test -w backend",
+    "db:reset": "npm run db:reset -w backend",
+    "db:schema": "npm run db:schema -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
